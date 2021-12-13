@@ -7,5 +7,10 @@ pipeline {
                 sh 'echo qqqq'
             }
         }
+         stage('test') {
+            steps {
+                sh 'echo test'
+            }
+        }
     }
 }
