@@ -37,3 +37,5 @@ spec:
           httpGet:
             path: /
             port: http
+            
+            kobi
