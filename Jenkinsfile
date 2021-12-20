@@ -1,14 +1,9 @@
 pipeline {
-    agent {
-        docker {
-            image 'node:lts-buster-slim' 
-            args '-p 3000:3000' 
-        }
-    }
+    agent { docker 'maven:3.8.1-adoptopenjdk-11' } 
     stages {
-        stage('Build') { 
+        stage('Example Build') {
             steps {
-                sh 'npm install' 
+                sh 'mvn -B clean verify'
             }
         }
     }
