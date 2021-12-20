@@ -1,9 +1,11 @@
 pipeline {
-    agent { docker 'maven:3.8.1-adoptopenjdk-11' } 
+    agent {
+        docker { image 'node:16.13.1-alpine' }
+    }
     stages {
-        stage('Example Build') {
+        stage('Test') {
             steps {
-                sh 'mvn -B clean verify'
+                sh 'node --version'
             }
         }
     }
