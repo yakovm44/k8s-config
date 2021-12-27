@@ -15,4 +15,8 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+            echo " in the always"
+    }
 }
