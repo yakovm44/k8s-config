@@ -6,12 +6,12 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'node --version'
+                echo "in build mode"
             }
         }
          stage('test') {
             steps {
-                sh 'echo test'
+                echo "in test mode"
             }
         }
     }
