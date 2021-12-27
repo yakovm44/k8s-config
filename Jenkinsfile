@@ -21,8 +21,8 @@ pipeline {
                 echo "the build name is: $JOB_NAME  AAA $env.JOB_NAME"
                 echo " the git url is: $GIT_URL"
                 echo " check me = $CHECKME"
-                sh 'CHECKME=7777'
-                echo " check me = $CHECKME"
+            //    sh 'CHECKME=7777'
+            //    echo " check me = $CHECKME"
                 
             }
             
