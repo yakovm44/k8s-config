@@ -8,6 +8,7 @@ pipeline {
             when {
                 experssion{
                     BRANCH_NAME == 'test1'
+                }
             }
             steps {
                 echo "in build mode , only for test1"
