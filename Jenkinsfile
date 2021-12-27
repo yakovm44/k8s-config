@@ -15,6 +15,7 @@ pipeline {
                 echo "in build mode , only for test1"
                 echo "the build number is : $BUILD_NUMBER"
                 echo "the build name is: $JOB_NAME  AAA $env.JOB_NAME"
+                echo " the git url is: $GIT_URL"
             }
             
         }
