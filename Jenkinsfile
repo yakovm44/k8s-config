@@ -6,7 +6,8 @@ pipeline {
     stages {
         stage('build') {
             when {
-                experssion{
+               
+                expression{    
                     BRANCH_NAME == 'test1'
                 }
             }
