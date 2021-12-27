@@ -8,7 +8,7 @@ pipeline {
             when {
                
                 expression{    
-                    BRANCH_NAME == 'test1'
+                    BRANCH_NAME == 'test2'
                 }
             }
             steps {
