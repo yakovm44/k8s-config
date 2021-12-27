@@ -13,6 +13,7 @@ pipeline {
             }
             steps {
                 echo "in build mode , only for test1"
+                echo "the build number is : $BUILD_NUMBER"
             }
             
         }
