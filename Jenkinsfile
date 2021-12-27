@@ -8,11 +8,14 @@ pipeline {
             when {
                
                 expression{    
-                    BRANCH_NAME == 'test2'
+                    BRANCH_NAME == 'test1'
                 }
             }
             steps {
                 echo "in build mode , only for test1"
+            }
+            steps{
+                echo "22222"
             }
         }
          stage('test') {
