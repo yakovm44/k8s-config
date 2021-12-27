@@ -26,7 +26,8 @@ pipeline {
                 echo "3 check me = ${CHECKME}"
                 
                 echo " The credntiales = $CRED_USR" 
-                echo " The credntiales = $CRED_PSW" 
+                echo " The credntiales = $CRED_PSW"
+                
                 
                 
             //    sh 'CHECKME=7777'
