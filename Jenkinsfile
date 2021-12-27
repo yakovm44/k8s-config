@@ -25,7 +25,7 @@ pipeline {
                 echo '2 check me = $CHECKME'  //not work wall
                 echo "3 check me = ${CHECKME}"
                 
-                echo " The credntiales = $CRED" 
+                echo " The credntiales = ${CRED}" 
                 
                 
             //    sh 'CHECKME=7777'
