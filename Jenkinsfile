@@ -4,6 +4,7 @@ pipeline {
     agent any
     environment{
     CHECKME=123
+    CRED = credentials('yakov44-git')
     }
     
      
@@ -21,8 +22,10 @@ pipeline {
                 echo "the build name is: $JOB_NAME  AAA $env.JOB_NAME"
                 echo " the git url is: $GIT_URL"
                 echo "1 check me = $CHECKME"
-                echo '2 check me = $CHECKME'
+                echo '2 check me = $CHECKME'  //not work wall
                 echo "3 check me = ${CHECKME}"
+                
+                echo " The credntiales = $CRED" 
                 
                 
             //    sh 'CHECKME=7777'
