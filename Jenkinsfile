@@ -5,8 +5,12 @@ pipeline {
      
     stages {
         stage('build') {
+            when {
+                experssion{
+                    BRANCH_NAME == 'test1'
+            }
             steps {
-                echo "in build mode"
+                echo "in build mode , only for test1"
             }
         }
          stage('test') {
