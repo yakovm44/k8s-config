@@ -19,8 +19,8 @@ pipeline {
         always {
             echo " in the always"
         }
-        sucsses {
-            echo " in the sucsess"
+        success {
+            echo " in the success"
         }
         failure {
             echo " in the fail"
