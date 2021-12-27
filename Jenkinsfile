@@ -14,9 +14,7 @@ pipeline {
             steps {
                 echo "in build mode , only for test1"
             }
-            steps{
-                echo "22222"
-            }
+            
         }
          stage('test') {
             steps {
