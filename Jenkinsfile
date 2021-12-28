@@ -5,6 +5,11 @@ pipeline {
     
     parameters { 
         string(name: 'DEPLOY_ENV', defaultValue: 'staging', description: 'bla bla') 
+        booleanParam(name: 'TOGGLE', defaultValue: true, description: 'Toggle this value')
+
+        choice(name: 'CHOICE', choices: ['One', 'Two', 'Three'], description: 'Pick something')
+
+        password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
     }
     environment{
     CHECKME=123
@@ -32,6 +37,9 @@ pipeline {
                 echo " The credntiales = $CRED_USR" 
                 echo " The credntiales = $CRED_PSW"
                 echo " DEPLOY_ENV =$DEPLOY_ENV"
+                
+                 echo "111 Choice: ${params.CHOICE}"
+                echo "222 Choice: ${CHOICE}"
                 
                 
             //    sh 'CHECKME=7777'
