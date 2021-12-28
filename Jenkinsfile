@@ -49,6 +49,11 @@ pipeline {
             
         }
          stage('test') {
+             when {
+                  expression{    
+                    CHOICE == 'One'
+                  }
+             }
             steps {
                 echo "in test mode"
             }
