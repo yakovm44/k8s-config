@@ -2,6 +2,10 @@
 pipeline {
     
     agent any
+    
+    parameters { 
+        string(name: 'DEPLOY_ENV', defaultValue: 'staging', description: 'bla bla') 
+    }
     environment{
     CHECKME=123
     CRED = credentials('yakov44-git')
@@ -27,7 +31,7 @@ pipeline {
                 
                 echo " The credntiales = $CRED_USR" 
                 echo " The credntiales = $CRED_PSW"
-                
+                echo " DEPLOY_ENV =$DEPLOY_ENV"
                 
                 
             //    sh 'CHECKME=7777'
