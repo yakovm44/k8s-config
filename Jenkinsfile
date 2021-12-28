@@ -51,7 +51,7 @@ pipeline {
                 echo "222 Choice: ${CHOICE}"
                 
                 script{
-                    gv.testApp()
+                    gv.testAppA()
                 }
                 
                 
