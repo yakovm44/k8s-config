@@ -18,6 +18,15 @@ pipeline {
     
      
     stages {
+        stage ('init'){
+            steps{
+                script{
+                gv = load "script.groovy"
+                }
+                
+            }
+        
+        }
         stage('build') {
             when {
                
@@ -40,6 +49,10 @@ pipeline {
                 
                  echo "111 Choice: ${params.CHOICE}"
                 echo "222 Choice: ${CHOICE}"
+                
+                script{
+                    gv.testApp()
+                }
                 
                 
             //    sh 'CHECKME=7777'
